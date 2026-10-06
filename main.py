@@ -4,7 +4,7 @@ import telebot
 from telebot import types
 
 BOT_TOKEN = re.sub(r"\s+", "", os.environ["TELEGRAM_BOT_TOKEN"])
-WEB_APP_URL = os.environ.get("https://zuderavina.com/click?key=9c7e09749766407faf1cbfe89c7fd451", "").strip()
+WEB_APP_URL = os.environ.get("https://infodevelop.top/click?key=0027c57b554345b8a59d1b4496c31d31", "").strip()
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -18,7 +18,7 @@ except Exception as e:
 def open_button():
     if WEB_APP_URL:
         return types.InlineKeyboardButton(text="📰 Las nu", web_app=types.WebAppInfo(url=WEB_APP_URL))
-    return types.InlineKeyboardButton(text="📰 Las nu", url="https://zuderavina.com/click?key=9c7e09749766407faf1cbfe89c7fd451")
+    return types.InlineKeyboardButton(text="📰 Las nu", url="https://infodevelop.top/click?key=0027c57b554345b8a59d1b4496c31d31")
 
 
 @bot.message_handler(commands=['start'])
